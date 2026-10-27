@@ -1,0 +1,8 @@
+# Генерирана папка от CMake/Ninja
+build/
+
+# Настройки на IDE-та
+.vs/
+.vscode/
+out/
+CMakeLists.txt.user
