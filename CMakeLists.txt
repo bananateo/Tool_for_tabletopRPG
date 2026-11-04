@@ -13,6 +13,8 @@ add_executable(MyQtApp
     grid/gridscene.cpp
     ui/panel.h
     ui/panel.cpp
+    grid/gridview.h
+    grid/gridview.cpp
 )
 
 target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)

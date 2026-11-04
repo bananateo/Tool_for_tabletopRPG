@@ -9,7 +9,6 @@
 GridScene::GridScene(QObject *parent)
     : QGraphicsScene(parent)
 {
-    // Голяма сцена, за да може да се мести свободно във всички посоки
     setSceneRect(-100000, -100000, 200000, 200000);
 }
 
@@ -39,7 +38,6 @@ void GridScene::drawBackground(QPainter *painter, const QRectF &rect)
         lines.append(QLineF(rect.left(), y, rect.right(), y));
     }
 
-    // Ширина 0 = козметично перо: винаги 1 px, независимо от мащаба
     painter->setPen(QPen(QColor(55, 55, 55), 0));
     painter->drawLines(lines);
 }

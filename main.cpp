@@ -1,9 +1,10 @@
 #include <QApplication>
 #include <QMainWindow>
-#include <QGraphicsView>
 #include <QDockWidget>
 
+#include "grid/gridview.h"
 #include "grid/gridscene.h"
+
 #include "ui/panel.h"
 
 int main(int argc, char *argv[])
@@ -14,9 +15,7 @@ int main(int argc, char *argv[])
 
     QMainWindow window;
 
-    auto *view = new QGraphicsView(&scene);
-    view->setRenderHint(QPainter::Antialiasing);
-    view->setDragMode(QGraphicsView::ScrollHandDrag);
+    auto *view = new GridView(&scene);
     window.setCentralWidget(view);
 
     auto *panel = new Panel;

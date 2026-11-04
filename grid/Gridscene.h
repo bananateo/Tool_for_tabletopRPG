@@ -16,5 +16,5 @@ protected:
     void drawBackground(QPainter *painter, const QRectF &rect) override;
 
 private:
-    int m_gridSize = 50;   // разстояние между линиите (в единици на сцената)
+    int m_gridSize = 50;
 };
