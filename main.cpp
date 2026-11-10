@@ -23,6 +23,8 @@ int main(int argc, char *argv[])
     dock->setWidget(panel);
     window.addDockWidget(Qt::LeftDockWidgetArea, dock);
 
+    QObject::connect(panel, &Panel::backgroundImageSelected, &scene, &GridScene::setBackgroundImage);
+
     window.resize(1100, 600);
     window.show();
 
